@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="{% static 'styles.min.css' %}">
   </head>
   <body>
+    {% if most_popular_posts %}
+      {% for post in most_popular_posts %}
+        {{ post.title }}<br>
+      {% endfor %}
+    {% endif %}
+
     <!--================Header Menu Area =================-->
     <header class="header_area">
       <div class="main_menu">
