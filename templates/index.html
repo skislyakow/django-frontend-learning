@@ -75,7 +75,7 @@
                 </div>
                 <div class="blog__slide__content">
                   <h3><a href="{% url 'post_detail' slug=post.slug %}">{{ post.title }}</a></h3>
-                  <p>2 days ago</p>
+                  <p>{{ post.published_at }}</p>
                 </div>                
               </div>              
             </div>
@@ -100,16 +100,20 @@
               {% for post in fresh_posts %}
               <div class="single-recent-blog-post">
                 <div class="thumb">
-                  <img class="img-fluid" src="{{ MEDIA_URL }}{{ post.image_url }}" alt="">
+                  {% if post.image_url %}
+                    <img class="img-fluid" src="{{ MEDIA_URL }}{{ post.image_url }}" alt="">
+                  {% else %}
+                    <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="">
+                  {% endif %}
                   <ul class="thumb-info">
-                    <li><a href="#"><i class="ti-user"></i>Admin</a></li>
+                    <li><a href="#"><i class="ti-user"></i>{{ post.author }}</a></li>
                     <li><a href="#"><i class="ti-notepad"></i>{{ post.published_at }}</a></li>
                     <li><a href="#"><i class="ti-themify-favicon"></i>{{ post.comments_amount }} Comments</a></li>
                   </ul>
                 </div>
                 <div class="details mt-20">
                   <h3>{{ post.title }}</h3>
-                  <p>Over yielding doesn't so moved green saw meat hath fish he him from given yielding lesser cattle were fruitful lights. Given let have, lesser their made him above gathered dominion sixth. Creeping deep said can't called second. Air created seed heaven sixth created living</p>
+                  <p>{{ post.text }}</p>
                   <a class="button" href="{% url 'post_detail' slug=post.slug %}">Read More <i class="ti-arrow-right"></i></a>
                 </div>
               </div>
