@@ -205,6 +205,7 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 .vscode/settings.json
+.vscode/
 
 # Ruff stuff:
 .ruff_cache/
@@ -223,5 +224,8 @@ __marimo__/
 # AI
 AGENTS.md
 
+# Media
+media/
 
-
+# GIT
+static/.gitkeep
