@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{% block title %}{% endblock %}</title>
     <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
-
     <link rel="stylesheet" href="{% static 'styles.min.css' %}">
   </head>
   <body>
@@ -40,29 +39,12 @@
         </nav>
       </div>
     </header>
-    <!--================Header Menu Area =================-->
-    
+    <!--================Header Menu Area =================-->    
     <main class="site-main">
-      <!--================Hero Banner start =================-->  
-      
-      <!--================Hero Banner end =================-->  
-
-      <!--================ Blog slider start =================-->
-
-      <!--================ Blog slider end =================-->
-
       <!--================ Start Blog Post Area =================-->
       {% block content %}{% endblock %}
-            <!-- Start Blog Post Siddebar -->
-
-            
-            <!-- End Blog Post Siddebar -->
-          </div>
-        </div>
-      </section>
       <!--================ End Blog Post Area =================-->
     </main>
-
     <!--================ Start Footer Area =================-->
     <footer class="footer-area section-padding">
       <div class="container">
@@ -81,21 +63,15 @@
               <h6>Newsletter</h6>
               <p>Stay update with our latest</p>
               <div class="" id="mc_embed_signup">
-
                 <form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
                   method="get" class="form-inline">
-
                   <div class="d-flex flex-row">
-
                     <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
                       required="" type="email">
-
-
                     <button class="click-btn btn btn-default"><span class="lnr lnr-arrow-right"></span></button>
                     <div style="position: absolute; left: -5000px;">
                       <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
                     </div>
-
                   </div>
                   <div class="info"></div>
                 </form>
@@ -135,7 +111,6 @@
       </div>
     </footer>
     <!--================ End Footer Area =================-->
-
     <script src="{% static 'scripts.js' %}"></script>
   </body>
 </html>

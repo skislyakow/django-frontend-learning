@@ -2,8 +2,7 @@
   {% block content %}
   {% load static %}
   {% block title %}Sensive Blog - Home{% endblock %}
-    <!--================Header Menu Area =================-->
-    
+    <!--================Header Menu Area =================-->    
     <main class="site-main">
       <!--================Hero Banner start =================-->  
       <section class="mb-30px">
@@ -48,12 +47,7 @@
       <!--================ Start Blog Post Area =================-->
       <section class="blog-post-area section-margin mt-4">
         <div class="container">
-          <div class="row">
-            
-              
-                
-              
-            
+          <div class="row">         
             <div class="col-lg-8">
               {% if fresh_posts %}
               {% for post in fresh_posts %}
@@ -82,7 +76,6 @@
               </div>
               {% endfor %}
               {% endif %}              
-
               <div class="row">
                 <div class="col-lg-12">
                   <nav class="blog-pagination justify-content-center d-flex">
@@ -108,7 +101,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Start Blog Post Siddebar -->
             <div class="col-lg-4 sidebar-widgets">
               <div class="widget-wrap">
@@ -122,19 +114,15 @@
                   </div>
                   <button class="bbtns d-block mt-20 w-100">Subcribe</button>
                 </div>
-
-
                 <div class="single-sidebar-widget post-category-widget">
                   <h4 class="single-sidebar-widget" style="height:200px;">Здесь будет реклама</h4>
                 </div>
-              </div>
-              
+              </div>           
             </div>
             <!-- End Blog Post Siddebar -->
           </div>
         </div>
       </section>
       <!--================ End Blog Post Area =================-->
-    </main>
-   
+    </main>  
 {% endblock %}

@@ -2,10 +2,6 @@
   {% block content %}
   {% load static %}
   {% block title %}{{ post.title }} - Blog Details{% endblock %}
-
-
-    <!--================Header Menu Area =================-->
-    
     <!--================ Hero sm Banner start =================-->      
     <section class="mb-30px">
       <div class="container">
@@ -23,8 +19,6 @@
       </div>
     </section>
     <!--================ Hero sm Banner end =================-->    
-    
-
     <!--================ Start Blog Post Area =================-->
     <section class="blog-post-area section-margin">
       <div class="container">
@@ -59,8 +53,6 @@
                 </div>
               </div>
             </div>
-            
-
             <div class="comments-area">
               <h4>{{ post.comments|length }} Comments</h4>
               {% for comment in post.comments %}
@@ -83,8 +75,6 @@
               {% endfor %}		                                            				
             </div>
           </div>
-
-
           <!-- Start Blog Post Siddebar -->
           <div class="col-lg-4 sidebar-widgets">
             <div class="widget-wrap">
@@ -98,8 +88,6 @@
                 </div>
                 <button class="bbtns d-block mt-20 w-100">Subcribe</button>
               </div>
-
-
               <div class="single-sidebar-widget post-category-widget">
                 <h4 class="single-sidebar-widget" style="height:200px;">Здесь будет реклама</h4>
               </div>
@@ -110,10 +98,4 @@
       </div>
     </section>
     <!--================ End Blog Post Area =================-->
-
-    <!--================ Start Footer Area =================-->
-
-    <!--================ End Footer Area =================-->
-
-
 {% endblock %}
